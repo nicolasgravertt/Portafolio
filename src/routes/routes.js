@@ -9,7 +9,7 @@ function AppRoutes() {
     <Routes>
       <Route
         exact
-        path="/"
+        path="/Portafolio"
         element={
           <Home />
         }
