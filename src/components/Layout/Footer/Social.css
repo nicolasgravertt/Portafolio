@@ -1,0 +1,17 @@
+.socialIcon{
+    margin-bottom: 5px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.mobileWrapper{
+    display: flex;
+}

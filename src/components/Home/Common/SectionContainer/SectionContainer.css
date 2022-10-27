@@ -1,0 +1,22 @@
+.sectionContainer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.titleContainer{
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.title{
+    margin: 4rem;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.childrenContainer{
+    min-height: 100%;
+}

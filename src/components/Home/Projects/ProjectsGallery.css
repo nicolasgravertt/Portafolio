@@ -1,0 +1,13 @@
+.galleryContainer{
+    overflow: visible;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.item{
+    overflow: visible;
+}
+
+.loadBtn{
+    width: 200px;
+}

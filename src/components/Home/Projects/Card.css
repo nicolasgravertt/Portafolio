@@ -1,0 +1,46 @@
+.cardContainer{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardMedia{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.frontImage{
+    object-fit: cover;
+    object-position: center left;
+    width: 100%;
+}
+
+.cardTitle{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1fr;
+}
+
+.overview{
+    font-size: 14px;
+    margin-bottom: 1fr;
+}
+
+.technologies{
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+}
+
+.hover{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
