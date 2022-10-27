@@ -48,7 +48,7 @@ function MessageBox() {
             name: Yup.string().required('Nombre es requerido'),
             email: Yup.string().email('Direccion de email no es valida').required('Email es requerido'),
             message: Yup.string().required('Mensaje es requerido'),
-            captcha: Yup.string().required(),
+            captcha: Yup.string().required('Captcha Requerido'),
           })}
         >
           {({
@@ -145,7 +145,8 @@ function MessageBox() {
                 <Typography
                   variant="body2"
                 >
-                  Your message has been successfully sent, Ill reply as soon as possible.
+                  Tu mensaje ha sido enviado satisfactoriamente,
+                  Responderé tan rápido como sea posible.
                 </Typography>
               </Box>
               )}
