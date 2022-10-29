@@ -6,10 +6,9 @@ import IconBtn from './IconBtn';
 import './Social.css';
 
 function Social({ mobile }) {
-  // const classes = useStyles();
   if (mobile) {
     return (
-      <div>
+      <div className="mobileWrapper">
         <IconBtn icon={GitHub} m={1} href="https://github.com/nicolasgravertt" />
         <IconBtn icon={Instagram} m={1} href="https://www.instagram.com/" />
         <IconBtn icon={LinkedIn} m={1} href="https://www.linkedin.com/in/nicolas-gravertt-acevedo/" />
