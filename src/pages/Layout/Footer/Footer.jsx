@@ -17,7 +17,7 @@ function Footer() {
       >
         <Social mobile={isMobile} />
         <Typography variant="body2" color="initial">
-          © 2022 Nicolas Gravertt, Inc.
+          © 2022 Nicolas Gravertt, Inc. Beta 1.0.
         </Typography>
       </Box>
     </Container>

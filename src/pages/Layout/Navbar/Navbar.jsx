@@ -35,7 +35,7 @@ function Navbar() {
             <Hidden smDown>
               <Menu />
             </Hidden>
-            <Hidden mdUp>
+            <Hidden smUp>
               <IconButton
                 color="inherit"
                 aria-label="open drawer"
@@ -49,7 +49,7 @@ function Navbar() {
           </Box>
         </Toolbar>
       </AppBar>
-      <Hidden mdUp>
+      <Hidden smup>
         <MobileMenu
           open={mobileNavIsOpen}
           onClose={() => setMobileNavIsOpen(!mobileNavIsOpen)}

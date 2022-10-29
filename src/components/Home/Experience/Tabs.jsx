@@ -12,6 +12,9 @@ import { experienceList } from '../../../data';
 import './Tabs.css';
 
 function StyledTabs() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -19,12 +22,13 @@ function StyledTabs() {
   };
 
   return (
-    <div className="tab">
+    <div className="tab" style={isMobile ? { flexDirection: 'column' } : { flexDirection: 'row' }}>
       <Tabs
-        orientation="vertical"
+        orientation={isMobile ? 'horizontal' : 'vertical'}
         value={value}
         onChange={handleChange}
         className="tabs"
+        sx={isMobile ? { width: '100%' } : { width: '200px', maxWidth: '200px', minWidth: '200px' }}
         centered
       >
         {experienceList.map((elem) => (
