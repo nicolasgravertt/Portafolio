@@ -15,7 +15,7 @@ function Footer() {
         paddingBottom: theme.spacing(6),
       }}
       >
-        {isMobile && <Social mobile />}
+        <Social mobile={isMobile} />
         <Typography variant="body2" color="initial">
           © 2022 Nicolas Gravertt, Inc.
         </Typography>

@@ -4,10 +4,10 @@ import Divider from '../Divider/Divider';
 import './SectionContainer.css';
 
 function SectionContainer({
-  children, title,
+  children, title, ...rest
 }) {
   return (
-    <Container component="section" className="sectionContainer" maxWidth="xl">
+    <Container component="section" className="sectionContainer" maxWidth="xl" {...rest}>
       {title && (
         <div className="titleContainer">
           <Divider />

@@ -4,7 +4,7 @@ import ProjectsGallery from '../../../../components/Home/Projects/ProjectsGaller
 
 function Projects() {
   return (
-    <SectionContainer id="projects" title="Projectos">
+    <SectionContainer id="projects" title="Proyectos">
       <ProjectsGallery />
     </SectionContainer>
   );
