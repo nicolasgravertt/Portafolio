@@ -26,13 +26,13 @@ function Menu() {
 
   return (
     <Box sx={{
-      width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'flex-end',
+      height: '100%', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'flex-end',
     }}
     >
       <Tabs
+        sx={{ marginRight: '20px' }}
         value={value}
         onChange={handleChange}
-        style={{ marginRight: '20px' }}
         textColor="inherit"
         variant="fullWidth"
         aria-label="full width tabs example"

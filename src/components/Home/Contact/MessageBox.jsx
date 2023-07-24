@@ -6,12 +6,12 @@ import { Formik } from 'formik';
 import emailjs from '@emailjs/browser';
 import * as Yup from 'yup';
 import ReCAPTCHA from 'react-google-recaptcha';
-import Check from '../../../../assets/images/Check';
+import Check from '../../../assets/images/Check';
 import './MessageBox.css';
 
 const {
   SERVICE_TOKEN, TEMPLATE_TOKEN, PUBLIC_KEY, RECAPTCHA_TOKEN,
-} = require('../../../../config/environment');
+} = require('../../../config/environment');
 
 function MessageBox() {
   const [sending, setSending] = useState(false);

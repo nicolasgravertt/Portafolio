@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionContainer from '../../../../components/Home/Common/SectionContainer/SectionContainer';
-import MessageBox from '../../../../components/Home/Common/MessageBox/MessageBox';
+import MessageBox from '../../../../components/Home/Contact/MessageBox';
 
 function Contact() {
   return (

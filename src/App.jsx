@@ -5,7 +5,7 @@ import {
   Route, Routes,
 } from 'react-router-dom';
 
-import Layout from './pages/Layout/Layout';
+import Layout from './Layout/Layout';
 import AppRoutes from './routes/routes';
 
 function App() {
