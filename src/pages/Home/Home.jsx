@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   About, Front, Experience, Projects, Contact,
-} from '../Sections/Home';
+} from './Sections';
 
 function Home() {
   return (

@@ -3,8 +3,8 @@ import {
   Link, Box, Hidden, IconButton,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import AppBar from '../../../components/Layout/Navbar/AppBar';
-import Toolbar from '../../../components/Layout/Navbar/Toolbar';
+import AppBar from '../../components/Layout/Navbar/AppBar';
+import Toolbar from '../../components/Layout/Navbar/Toolbar';
 import Menu from './Menu';
 import MobileMenu from './MobileMenu';
 
@@ -25,6 +25,7 @@ function Navbar() {
           </Link>
           <Box sx={{
             flex: 1,
+            height: '100%',
             display: 'flex',
             justifyContent: 'flex-end',
             fontSize: 16,
@@ -49,7 +50,7 @@ function Navbar() {
           </Box>
         </Toolbar>
       </AppBar>
-      <Hidden smup>
+      <Hidden smUp>
         <MobileMenu
           open={mobileNavIsOpen}
           onClose={() => setMobileNavIsOpen(!mobileNavIsOpen)}

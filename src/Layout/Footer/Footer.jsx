@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Container, Typography, Divider, useTheme, Box, useMediaQuery,
 } from '@mui/material';
-import Social from '../../../components/Layout/Footer/Social';
+import Social from '../../components/Layout/Footer/Social';
 
 function Footer() {
   const theme = useTheme();
