@@ -1,47 +1,27 @@
 import React from 'react';
-import {
-  Card as MuiCard,
-  CardContent,
-  CardMedia,
-  Typography,
-} from '@mui/material';
+import { Card as MuiCard, CardContent, CardMedia, Typography, useTheme } from '@mui/material';
 
 import './Card.css';
+import { tokens } from '../../../theme/Theme';
 
-function Card({
-  title, backgroundImage, frontImage, overview, technologies,
-}) {
+function Card({ title, backgroundImage, frontImage, overview, technologies }) {
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+
   return (
-    <MuiCard
-      className="cardContainer"
-    >
+    <MuiCard className="cardContainer">
       <div>
-        <CardMedia
-          className="cardMedia"
-          image={backgroundImage}
-          title={title}
-        >
-          <img
-            className="frontImage"
-            src={frontImage}
-            alt={title}
-          />
+        <CardMedia className="cardMedia" image={backgroundImage} title={title}>
+          <img className="frontImage" src={frontImage} alt={title} />
         </CardMedia>
         <CardContent>
-          <Typography variant="h5" className="cardTitle">
+          <Typography color={colors.grey[400]} variant="h5" className="cardTitle">
             {title}
           </Typography>
-          <Typography
-            variant="body2"
-            className="overview"
-            style={{ flexGrow: 2 }}
-          >
+          <Typography color={colors.grey[400]} variant="h6" className="overview" style={{ flexGrow: 2 }}>
             {overview}
           </Typography>
-          <Typography
-            variant="body2"
-            className="technologies"
-          >
+          <Typography color={colors.grey[400]} variant="h7" className="technologies">
             {technologies.join(' · ')}
           </Typography>
         </CardContent>

@@ -22,8 +22,9 @@ const projectList = [
     project_overview: 'Aplicacion de ventas en desarrollo',
     technologies: ['React JS', 'Node JS', 'MongoDB'],
     backgroundImage:
-            'https://cdn.cbeditz.com/cbeditz/preview/black-red-gradient-background-wallpaper-74-11614352798fbqrv1wpuv.jpg',
-    frontImage: 'https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      'https://cdn.cbeditz.com/cbeditz/preview/black-red-gradient-background-wallpaper-74-11614352798fbqrv1wpuv.jpg',
+    frontImage:
+      'https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   },
 ];
 
@@ -44,6 +45,18 @@ const experienceList = [
   },
   {
     id: 1,
+    company: 'SAMTECH',
+    charge: 'Full stack React web developer.',
+    experience_duration: '21 Octubre 2021 - 30 Octubre 2022',
+    job_experience: `Desarrollé y migré distintos módulos dentro de un sistema web en React que consistía en
+    monitorización, gestión de recorridos y gestión conductores para distintos clientes dentro
+    del rubro minero.`,
+    links: {
+      website: 'https://www.samtech.cl/home/',
+    },
+  },
+  {
+    id: 2,
     company: 'CAS Chile',
     charge: 'Desktop finances App developer.',
     experience_duration: '17 Julio 2019 - 09 Septiembre 2021',
@@ -56,7 +69,7 @@ const experienceList = [
     },
   },
   {
-    id: 2,
+    id: 3,
     company: 'IMPERIAL S.A',
     charge: 'Training developer',
     experience_duration: '24 Septiembre 2018 - 01 Enero 2019',

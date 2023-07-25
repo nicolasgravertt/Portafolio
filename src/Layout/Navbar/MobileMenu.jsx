@@ -1,13 +1,12 @@
-import React from 'react';
-import {
-  Drawer, List, Divider, ListItem, IconButton, ListItemButton, ListItemIcon, ListItemText,
-} from '@mui/material';
+import React, { useContext } from 'react';
+import { Drawer, List, Divider, ListItem, IconButton, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import {
-  Person, Email, Folder, Leaderboard,
-} from '@mui/icons-material';
-import { styled } from '@mui/material/styles';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import { Person, Email, Folder, Leaderboard } from '@mui/icons-material';
+import { styled, useTheme } from '@mui/material/styles';
 import { Link } from 'react-scroll';
+import { ColorModeContext } from '../../theme/Theme';
 
 const smoothScrollProps = {
   spy: true,
@@ -33,18 +32,8 @@ function MobileMenu({ open, onClose }) {
     justifyContent: 'flex-end',
   }));
 
-  //   const listItemProps = {
-  //     button: true,
-  //     component: Link,
-  //     onClick: onClose,
-  //     onKeyDown: onClose,
-  //     spy: true,
-  //     smooth: true,
-  //     offset: 0,
-  //     duration: 500,
-  //     // className: {classes.listItem},
-  //     // activeClass: classes.active,
-  //   };
+  const theme = useTheme();
+  const colorMode = useContext(ColorModeContext);
 
   return (
     <Drawer
@@ -65,8 +54,14 @@ function MobileMenu({ open, onClose }) {
           <ChevronRightIcon />
         </IconButton>
       </DrawerHeader>
-      <Divider />
+      <Divider style={{ backgroundColor: theme.palette.primary.main }} />
       <List>
+        <ListItem key="Mode" disablePadding>
+          <ListItemButton onClick={colorMode.toggleColorMode}>
+            <ListItemIcon>{theme.palette.mode === 'dark' ? <DarkModeIcon /> : <LightModeIcon />}</ListItemIcon>
+            {theme.palette.mode === 'dark' ? <ListItemText primary="Óscuro" /> : <ListItemText primary="Claro" />}
+          </ListItemButton>
+        </ListItem>
         <ListItem key="Sobre Mi" disablePadding>
           <ListItemButton component={AnimatedLink} to="about">
             <ListItemIcon>
@@ -100,7 +95,7 @@ function MobileMenu({ open, onClose }) {
           </ListItemButton>
         </ListItem>
       </List>
-      <Divider />
+      <Divider style={{ backgroundColor: theme.palette.primary.main }} />
     </Drawer>
   );
 }
