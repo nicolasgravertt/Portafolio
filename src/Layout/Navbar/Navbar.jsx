@@ -18,7 +18,7 @@ function Navbar() {
       <AppBar position="fixed">
         <Toolbar sx={{ justifyContent: 'space-between', backgroundColor: colors.primary[700] }}>
           <Typography variant="h6" color={colors.grey[400]}>
-            <Link underline="none" color="inherit" href="/">
+            <Link underline="none" color="inherit" href="/Portafolio">
               Nicolas Gravertt
             </Link>
           </Typography>
