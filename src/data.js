@@ -47,7 +47,7 @@ const experienceList = [
     id: 1,
     company: 'SAMTECH',
     charge: 'Full stack React web developer.',
-    experience_duration: '21 Octubre 2021 - 30 Octubre 2022',
+    experience_duration: '16 Febrero 2023 - 16 Mayo 2023',
     job_experience: `Desarrollé y migré distintos módulos dentro de un sistema web en React que consistía en
     monitorización, gestión de recorridos y gestión conductores para distintos clientes dentro
     del rubro minero.`,
