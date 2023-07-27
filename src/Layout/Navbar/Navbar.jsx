@@ -41,7 +41,7 @@ function Navbar() {
                 aria-label="open drawer"
                 onClick={() => setMobileNavIsOpen(!mobileNavIsOpen)}
                 edge="start"
-                sx={{ mr: 2, color: colors.tertiary[400] }}
+                sx={{ color: colors.secondary[400] }}
               >
                 <MenuIcon />
               </IconButton>
