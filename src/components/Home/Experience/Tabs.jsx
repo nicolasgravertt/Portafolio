@@ -35,10 +35,11 @@ function StyledTabs() {
         color={colors.secondary[400]}
         orientation={isMobile ? 'horizontal' : 'vertical'}
         value={value}
+        variant="scrollable"
+        allowScrollButtonsMobile
         onChange={handleChange}
         className="tabs"
         sx={isMobile ? { width: '100%' } : { width: '200px', maxWidth: '200px', minWidth: '200px' }}
-        centered
       >
         {experienceList.map((elem) => (
           <Tab style={{ color: colors.tertiary[400] }} label={elem.company} key={elem.id} />

@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  LinkedIn, Instagram, GitHub, Email,
-} from '@mui/icons-material';
+import { LinkedIn, Instagram, GitHub, Email } from '@mui/icons-material';
 import IconBtn from './IconBtn';
 import './Social.css';
 

@@ -31,9 +31,9 @@ function Home() {
         Nicolas Gravertt
       </Typography>
       <Typography variant="h2" color={colors.tertiary[400]}>
-        Estudio a diario y creo paginas web.
+        Programando y Diseñando páginas web para el futuro.
       </Typography>
-      <Typography variant="h4" color={colors.tertiary[400]}>
+      <Typography mt={2} variant="h4" color={colors.tertiary[400]}>
         Full Stack Web Developer.
       </Typography>
       <Typography variant="h6" color={colors.tertiary[400]} marginBottom="30px">

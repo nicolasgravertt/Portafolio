@@ -18,7 +18,7 @@ function Footer() {
       >
         <Social mobile={isMobile} />
         <Typography variant="h5" color={colors.tertiary[400]}>
-          © 2022 Nicolas Gravertt, Inc. Beta 1.0.
+          © 2023 Nicolas Gravertt, Inc.
         </Typography>
       </Box>
     </Container>
