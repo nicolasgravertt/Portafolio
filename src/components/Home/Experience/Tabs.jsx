@@ -21,10 +21,18 @@ function StyledTabs() {
     setValue(newValue);
   };
 
+  const paperStyle = {
+    backgroundColor: colors.primary[400],
+  };
+
   return (
-    <Paper className="tab" style={isMobile ? { flexDirection: 'column' } : { flexDirection: 'row' }}>
+    <Paper
+      color={colors.primary[400]}
+      className="tab"
+      style={isMobile ? { flexDirection: 'column', ...paperStyle } : { flexDirection: 'row', ...paperStyle }}
+    >
       <Tabs
-        color={colors.grey[400]}
+        color={colors.secondary[400]}
         orientation={isMobile ? 'horizontal' : 'vertical'}
         value={value}
         onChange={handleChange}
@@ -33,28 +41,28 @@ function StyledTabs() {
         centered
       >
         {experienceList.map((elem) => (
-          <Tab style={{ color: colors.grey[400] }} label={elem.company} key={elem.id} />
+          <Tab style={{ color: colors.tertiary[400] }} label={elem.company} key={elem.id} />
         ))}
       </Tabs>
       {experienceList.map((elem) => (
-        <TabPanel colors={colors.grey[400]} value={value} index={elem.id} key={elem.id}>
+        <TabPanel colors={colors.secondary[400]} value={value} index={elem.id} key={elem.id}>
           <Box mb={4}>
-            <Typography color={colors.grey[400]} variant="h5">
+            <Typography color={colors.tertiary[400]} variant="h5">
               {elem.charge} @
               <Link
                 href={elem.links.website || elem.links.facebook || elem.links.instagram}
-                color={colors.grey[400]}
+                color={colors.tertiary[400]}
                 target="_blank"
               >
                 {elem.company}
               </Link>
             </Typography>
-            <Typography variant="h6" color={colors.grey[400]} fontSize="14">
+            <Typography variant="h6" color={colors.tertiary[400]} fontSize="14">
               {elem.experience_duration}
             </Typography>
           </Box>
           <Box mb={4}>
-            <Typography color={colors.grey[400]} variant="h5">
+            <Typography color={colors.tertiary[400]} variant="h5">
               {elem.job_experience}
             </Typography>
           </Box>

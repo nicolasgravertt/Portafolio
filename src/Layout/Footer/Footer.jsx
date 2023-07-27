@@ -9,7 +9,7 @@ function Footer() {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <Container maxWidth="xl">
-      <Divider style={{ backgroundColor: theme.palette.primary.main }} />
+      <Divider style={{ backgroundColor: colors.secondary[400] }} />
       <Box
         sx={{
           paddingTop: theme.spacing(4),
@@ -17,7 +17,7 @@ function Footer() {
         }}
       >
         <Social mobile={isMobile} />
-        <Typography variant="h5" color={colors.grey[400]}>
+        <Typography variant="h5" color={colors.tertiary[400]}>
           © 2022 Nicolas Gravertt, Inc. Beta 1.0.
         </Typography>
       </Box>

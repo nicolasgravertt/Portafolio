@@ -109,11 +109,11 @@ function MessageBox() {
                   </Box>
                   <Box display="flex" justifyContent="center" mt={2}>
                     <Button
+                      sx={{ backgroundColor: colors.secondary[400], color: colors.tertiary[400] }}
                       className="submitBtn"
                       type="submit"
                       fullWidth
                       variant="contained"
-                      style={{ backgroundColor: '#02052f', color: colors.grey[400] }}
                       disabled={sending}
                     >
                       Contactame

@@ -11,8 +11,8 @@ function Skills() {
   return (
     <div className="skillsContainer">
       {skillsList.map((elem) => (
-        <Paper elevation={10} key={elem.title} className="paper">
-          <Typography color={colors.grey[400]} align="center">
+        <Paper sx={{ backgroundColor: colors.secondary[500] }} elevation={10} key={elem.title} className="paper">
+          <Typography color={colors.tertiary[500]} align="center">
             {elem.title}
           </Typography>
         </Paper>

@@ -13,7 +13,7 @@ function SectionContainer({ children, title, ...rest }) {
       {title && (
         <div className="titleContainer">
           <Divider />
-          <Typography variant="h4" color={colors.grey[400]} className="title">
+          <Typography variant="h4" color={colors.tertiary[400]} className="title">
             {title}
           </Typography>
           <Divider />

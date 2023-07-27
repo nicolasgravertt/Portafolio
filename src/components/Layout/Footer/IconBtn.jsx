@@ -1,13 +1,15 @@
 import React from 'react';
-import { Box, Link } from '@mui/material';
+import { Box, Link, useTheme } from '@mui/material';
 
-function IconBtn({
-  icon: Icon, href,
-}) {
+import { tokens } from '../../../theme/Theme';
+
+function IconBtn({ icon: Icon, href }) {
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
   return (
     <Box>
       <Link target="_blank" href={href}>
-        <Icon />
+        <Icon sx={{ color: colors.secondary[400] }} />
       </Link>
     </Box>
   );

@@ -16,8 +16,8 @@ function Navbar() {
   return (
     <>
       <AppBar position="fixed">
-        <Toolbar sx={{ justifyContent: 'space-between', backgroundColor: colors.primary[700] }}>
-          <Typography variant="h6" color={colors.grey[400]}>
+        <Toolbar sx={{ justifyContent: 'space-between', backgroundColor: colors.tertiary[500] }}>
+          <Typography variant="h6" color={colors.secondary[400]}>
             <Link underline="none" color="inherit" href="/Portafolio">
               Nicolas Gravertt
             </Link>
@@ -29,7 +29,6 @@ function Navbar() {
               display: 'flex',
               justifyContent: 'flex-end',
               fontSize: 16,
-              color: 'common.white',
               ml: 3,
             }}
           >
@@ -42,7 +41,7 @@ function Navbar() {
                 aria-label="open drawer"
                 onClick={() => setMobileNavIsOpen(!mobileNavIsOpen)}
                 edge="start"
-                sx={{ mr: 2 }}
+                sx={{ mr: 2, color: colors.tertiary[400] }}
               >
                 <MenuIcon />
               </IconButton>

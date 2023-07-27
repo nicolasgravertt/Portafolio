@@ -40,12 +40,12 @@ function Menu() {
       }}
     >
       <Box display="flex">
-        <IconButton style={{ color: colors.grey[400] }} onClick={colorMode.toggleColorMode}>
+        <IconButton style={{ color: colors.secondary[300] }} onClick={colorMode.toggleColorMode}>
           {theme.palette.mode === 'dark' ? <DarkModeIcon /> : <LightModeIcon />}
         </IconButton>
         <Tabs
           style={{
-            color: colors.grey[400],
+            color: colors.secondary[400],
           }}
           sx={{ marginRight: '20px' }}
           value={value}

@@ -9,19 +9,19 @@ function Card({ title, backgroundImage, frontImage, overview, technologies }) {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <MuiCard className="cardContainer">
+    <MuiCard sx={{ backgroundColor: colors.primary[400] }} className="cardContainer">
       <div>
         <CardMedia className="cardMedia" image={backgroundImage} title={title}>
           <img className="frontImage" src={frontImage} alt={title} />
         </CardMedia>
         <CardContent>
-          <Typography color={colors.grey[400]} variant="h5" className="cardTitle">
+          <Typography color={colors.tertiary[400]} variant="h5" className="cardTitle">
             {title}
           </Typography>
-          <Typography color={colors.grey[400]} variant="h6" className="overview" style={{ flexGrow: 2 }}>
+          <Typography color={colors.tertiary[400]} variant="h6" className="overview" style={{ flexGrow: 2 }}>
             {overview}
           </Typography>
-          <Typography color={colors.grey[400]} variant="h7" className="technologies">
+          <Typography color={colors.secondary[400]} variant="h7" className="technologies">
             {technologies.join(' · ')}
           </Typography>
         </CardContent>

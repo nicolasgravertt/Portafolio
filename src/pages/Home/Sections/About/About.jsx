@@ -28,7 +28,7 @@ function About() {
           style={{ flexDirection: 'column', alignItems: 'space-around' }}
         >
           <Box mb={4}>
-            <Typography color={colors.grey[400]} variant="body1">
+            <Typography color={colors.tertiary[400]} variant="body1">
               Hola mi nombre es Nicolás Gravertt. Busco contribuir con mi experiencia en prácticas y habilidad en el
               logro de las metas generales de la empresa tanto como las responsabilidades a mi cargo, con la oportunidad
               de continuar desarrollándome.
